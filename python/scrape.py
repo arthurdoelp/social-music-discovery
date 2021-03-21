@@ -33,7 +33,7 @@ driver = webdriver.Chrome(
 verifyFp = os.environ.get("VERIFYFP")
 
 api = TikTokApi.get_instance(
-    custom_verifyFp=verifyFp, use_test_endpoints=True)
+    custom_verifyFp=verifyFp, use_test_endpoints=True, use_selenium=True)
 
 client = bigquery.Client()
 
