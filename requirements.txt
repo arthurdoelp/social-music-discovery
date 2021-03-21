@@ -1,0 +1,14 @@
+google-api-core==1.26.1
+google-auth==1.28.0
+google-cloud-bigquery==2.12.0
+google-cloud-core==1.6.0
+google-crc32c==1.1.2
+google-resumable-media==1.2.0
+googleapis-common-protos==1.53.0
+playwright==1.9.2
+requests==2.25.1
+selenium==3.141.0
+selenium-stealth==1.0.6
+spotipy==2.17.1
+TikTokApi==3.9.3
+python-dotenv==0.15.0
