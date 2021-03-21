@@ -4,5 +4,4 @@ selenium
 selenium-stealth
 spotipy
 TikTokApi
-playwright
 python-dotenv
