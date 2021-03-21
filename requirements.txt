@@ -3,5 +3,6 @@ requests
 selenium
 selenium-stealth
 spotipy
+playwright-python
 TikTokApi
 python-dotenv
