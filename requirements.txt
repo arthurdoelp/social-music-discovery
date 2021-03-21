@@ -5,7 +5,6 @@ google-cloud-core==1.6.0
 google-crc32c==1.1.2
 google-resumable-media==1.2.0
 googleapis-common-protos==1.53.0
-playwright
 requests==2.25.1
 selenium==3.141.0
 selenium-stealth==1.0.6
