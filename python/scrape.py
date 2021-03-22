@@ -1,13 +1,14 @@
 import sys
-# from dotenv import load_dotenv
+from dotenv import load_dotenv
 from pathlib import Path  # Python 3.6+ only
-# env_path = Path('../config/') / 'config.env'
-# load_dotenv(dotenv_path=env_path)
+env_path = Path('../config/') / 'config.env'
+load_dotenv(dotenv_path=env_path)
 import json
 import datetime
 import os
 from google.cloud import bigquery
 from TikTokApi import TikTokApi
+from playwright import playwright
 # import requests
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
@@ -34,7 +35,7 @@ driver = webdriver.Chrome(
 verifyFp = os.environ.get("VERIFYFP")
 
 api = TikTokApi.get_instance(
-    custom_verifyFp=verifyFp, use_test_endpoints=True, use_selenium=True)
+    custom_verifyFp=verifyFp, use_test_endpoints=True)
 
 client = bigquery.Client()
 
