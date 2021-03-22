@@ -8,7 +8,6 @@ import datetime
 import os
 from google.cloud import bigquery
 from TikTokApi import TikTokApi
-from playwright import playwright
 # import requests
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
