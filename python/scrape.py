@@ -17,6 +17,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 
 # print(os.environ.get("CHROMEDRIVER_PATH"))
 
+
 def document_initialised(driver):
     return driver.execute_script("return initialised")
 
