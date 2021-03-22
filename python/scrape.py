@@ -73,6 +73,14 @@ print("-------------------Hashtags and Music_IDs-------------------")
 # hashtags_short = ["newmusic", "musician", "unsignedartist", "songwriter", "newmusicalert", "singersongwriter", "newartist", "song", "independentartist", "upcomingartist", "newsingle"]
 hashtags = ["newmusic", "newsingle"]
 
+print("grabbing trending tiktoks")
+tikkkytoks = api.trending()
+
+for tiktok in tikkkytoks:
+    print(tiktok['author']['uniqueId'])
+
+print("grabbed trending tiktoks")
+
 # Define the song ID List
 hashtag_tiktok_music_ids = []
 
