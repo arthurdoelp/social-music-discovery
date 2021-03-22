@@ -1,8 +1,8 @@
 import sys
-from python-dotenv import load_dotenv
+# from dotenv import load_dotenv
 from pathlib import Path  # Python 3.6+ only
-env_path = Path('../config/') / 'config.env'
-load_dotenv(dotenv_path=env_path)
+# env_path = Path('../config/') / 'config.env'
+# load_dotenv(dotenv_path=env_path)
 import json
 import datetime
 import os
@@ -15,7 +15,7 @@ from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 
-print(os.environ.get("CHROMEDRIVER_PATH"))
+# print(os.environ.get("CHROMEDRIVER_PATH"))
 
 def document_initialised(driver):
     return driver.execute_script("return initialised")
@@ -33,7 +33,7 @@ driver = webdriver.Chrome(
 verifyFp = os.environ.get("VERIFYFP")
 
 api = TikTokApi.get_instance(
-    custom_verifyFp=verifyFp, use_test_endpoints=True, use_selenium=True)
+    custom_verifyFp=verifyFp, use_test_endpoints=True)
 
 client = bigquery.Client()
 
