@@ -34,7 +34,7 @@ driver = webdriver.Chrome(
 verifyFp = os.environ.get("VERIFYFP")
 
 api = TikTokApi.get_instance(
-    custom_verifyFp=verifyFp, use_test_endpoints=True)
+    custom_verifyFp=verifyFp, use_test_endpoints=True, use_selenium=True)
 
 client = bigquery.Client()
 
@@ -76,6 +76,7 @@ hashtags = ["newmusic", "newsingle"]
 # Define the song ID List
 hashtag_tiktok_music_ids = []
 
+print("Grabbing tiktoks based on hashtags")
 # find tiktoks based on the hashtags from the list
 for hashtag in hashtags:
     hashtag_tiktoks = api.by_hashtag(hashtag, count=1, offset=0)
