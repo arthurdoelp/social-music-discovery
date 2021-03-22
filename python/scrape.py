@@ -6,8 +6,8 @@ from pathlib import Path  # Python 3.6+ only
 import json
 import datetime
 import os
-from TikTokApi import TikTokApi
 from google.cloud import bigquery
+from TikTokApi import TikTokApi
 # import requests
 import spotipy
 from spotipy.oauth2 import SpotifyClientCredentials
